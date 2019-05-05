@@ -20,7 +20,7 @@ do
         do
 			for((z = 0;z<3;z++))
 			do	
-		 	sbatch --constraint=$cons --mail-type=END --time=06:00:00 --mem=$mem --ntasks-per-node=$i LCS_$ptype.sh "$capptype $cons CORES: $i" $j $k
+		 	sbatch --constraint=$cons --mail-type=END --time=06:00:00 --mem=$l --ntasks-per-node=$i LCS_$ptype.sh "$capptype $cons CORES: $i" $j $k
 			done
 	done
     done
